@@ -8,8 +8,9 @@ rm -rf package/feeds/kiddin9/rtl* feeds/kiddin9/{shortcut-fe,fullconenat-nft} pa
 
 rm -rf devices/common/patches/{fix.patch,iptables.patch,kernel-defaults.patch,targets.patch}
 
-rm -rf toolchain/musl package/utils/e2fsprogs
+rm -rf toolchain/musl package/utils/e2fsprogs package/libs/libselinux
 
 svn co https://github.com/openwrt/openwrt/branches/openwrt-23.05/toolchain/musl toolchain/musl
 svn co https://github.com/openwrt/openwrt/branches/openwrt-23.05/package/utils/e2fsprogs package/utils/e2fsprogs
+svn co https://github.com/openwrt/openwrt/branches/openwrt-23.05/package/libs/libselinux package/libs/libselinux
 ln -sf feeds/luci/modules/luci-base package/feeds/kiddin9/luci-base
