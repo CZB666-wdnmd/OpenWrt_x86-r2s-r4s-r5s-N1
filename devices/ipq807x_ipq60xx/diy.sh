@@ -38,3 +38,5 @@ rm -rf devices/common/patches/{glinet,fix.patch,iptables.patch,targets.patch,ker
 rm -rf toolchain/musl
 
 svn co https://github.com/openwrt/openwrt/branches/openwrt-23.05/toolchain/musl toolchain/musl
+
+ln -sf feeds/luci/modules/luci-base package/feeds/kiddin9/luci-base
