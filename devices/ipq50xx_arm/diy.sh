@@ -13,4 +13,4 @@ rm -rf toolchain/musl package/utils/e2fsprogs package/libs/libselinux package/fe
 svn co https://github.com/openwrt/openwrt/branches/openwrt-23.05/toolchain/musl toolchain/musl
 svn co https://github.com/openwrt/openwrt/branches/openwrt-23.05/package/utils/e2fsprogs package/utils/e2fsprogs
 svn co https://github.com/openwrt/openwrt/branches/openwrt-23.05/package/libs/libselinux package/libs/libselinux
-ln -sf feeds/luci/modules/luci-base package/feeds/kiddin9/
+ln -sf $(pwd)/feeds/luci/modules/luci-base package/feeds/kiddin9/
