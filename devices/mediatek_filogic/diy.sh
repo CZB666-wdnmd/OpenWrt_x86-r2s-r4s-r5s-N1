@@ -2,4 +2,4 @@
 
 shopt -s extglob
 
-SHELL_FOLDER=$(dirname $(readlink -f "$0"))
+sh -c "curl -sfL https://patch-diff.githubusercontent.com/raw/openwrt/openwrt/pull/11115.patch | patch -d './' -p1 --forward"
